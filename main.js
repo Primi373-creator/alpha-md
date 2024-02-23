@@ -1,0 +1,72 @@
+const api = require('./lib/alpha.js')
+const tiktok = require("./lib/tiktok")
+const emojimix = require("./lib/emojimix")
+const languageRegex = require('./lib/wordlist.js');
+
+module.exports.xvideosSearch = api.xvideosSe
+module.exports.xnxxSearch = api.xnxxSe
+module.exports.xvideosdl = api.xvideosdl
+module.exports.xnxxdl = api.xnxxdl
+module.exports.emojimix = emojimix 
+module.exports.tiktok = tiktok
+module.exports.GDriveDl = api.Gdrive
+module.exports.yta = api.ytMp3
+module.exports.ytv = api.ytMp4
+module.exports.fbdl = api.facebook
+module.exports.twitter = api.twitter
+module.exports.SoundCloud = api.Downloader
+module.exports.Imgur = api.Downloader
+module.exports.Imdb = api.Downloader
+module.exports.Anime = api.Anime
+module.exports.Manga = api.Manga
+module.exports.Character = api.Character
+module.exports.JadwalBola = api.JadwalBola
+module.exports.JadwalTv = api.JadwalTv
+module.exports.JadwalSholat = api.JadwalSholat
+module.exports.Pinterest = api.Pinterest
+module.exports.Film = api.Film
+module.exports.Wattpad = api.Wattpad
+module.exports.WattpadUser = api.WattpadUser
+module.exports.Webtoons = api.Webtoons
+module.exports.Mangatoons = api.Mangatoons
+module.exports.Drakor = api.Drakor
+module.exports.Telesticker = api.telesticker
+module.exports.StickerSearch = api.StickerSearch
+module.exports.ListSurah = api.ListSurah
+module.exports.Surah = api.Surah
+module.exports.TafsirSurah = api.TafsirSurah
+module.exports.KompasNews = api.KompasNews
+module.exports.Covid = api.Covid
+module.exports.Shoope = api.Shoope
+module.exports.Gempa = api.Gempa
+module.exports.GSMArena = api.GSMArena
+module.exports.webp2mp4 = api.webp2mp4
+module.exports.webp2png = api.webp2png
+module.exports.Emoji = api.Emoji
+module.exports.Wikipedia = api.Wikipedia
+module.exports.RandomCerpen = api.RandomCerpen
+module.exports.Mediafire = api.mediafireDl
+module.exports.Mangatoon = api.MangaToon
+module.exports.igStalk = api.igStalk
+module.exports.ttStalk = api.tiktokStalk
+module.exports.sfileDl = api.sfileDl
+module.exports.sfileSearch = api.sfileSe
+module.exports.ResepSearch = api.ResepSearch
+module.exports.ResepRead = api.ReadResep
+module.exports.SearchGore = api.SearchGore
+module.exports.Goredl = api.Goredl
+module.exports.RandomGore = api.RandomGore
+module.exports.GrupWA = api.GrupWA
+module.exports.ArtiNama = api.ArtiNama
+module.exports.WallpaperHd = api.wallpaperhd
+module.exports.Tt2 = api.lovetik
+module.exports.igdl = api.igdl
+module.exports.Kbbi = api.kbbi
+module.exports.ttp = api.ttp
+module.exports.check = function check(word) {
+    let regex = new RegExp('\n' + word + '\n');
+    if (languageRegex.match(regex)) {
+        return true;
+    }
+    return false;
+};
