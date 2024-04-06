@@ -1,5 +1,5 @@
 const languageRegex = require(`./lib/wordlist.js`);
-const badWordsList = require('./lib/badWordsList.json');
+const badWordsList = require('./lib/badWordsList.js');
 function check(word) {
     let regex = new RegExp('\n' + word +'\n');
             if (languageRegex.match(regex)) {
